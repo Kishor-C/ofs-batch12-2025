@@ -1,0 +1,500 @@
+   37  cat monday.txt
+   38  git pull
+   39  clear
+   40  cat monday.txt
+   41  git log
+   42  clear
+   43  git branch issue200
+   44  git checkout issue200
+   45  touch A.java B.java C.java
+   46  git commit -m '3 java files created'
+   47  clear
+   48  git add .
+   49  git commit  -m '3 java files created'
+   50  git push -u origin issue200
+   51  clear
+   52  lst
+   53  ls
+   54  git checkout master
+   55  clear
+   56  ls
+   57  git pull
+   58  exit
+   59  git clone https://github.com/Kishor-C/ibm-april-2025.git
+   60  clear
+   61  cd ibm-april-2025/
+   62  clear
+   63  dir
+   64  git pull
+   65  ls
+   66  dir
+   67  clear
+   68  cat monday.txt
+   69  git branch issue25
+   70  git checkout issue25
+   71  vi cat.txt
+   72  ls
+   73  del cat.txt
+   74  rm cat.txxt
+   75  rm cat.txt
+   76  ls
+   77  clear
+   78  vi monday.txt
+   79  git add . 
+   80  git commit -m 'changes done to monday.txt
+   81  git push -u origin issue25
+   82  cat monday.txt
+   83  git checkout master
+   84  cat monday.txt
+   85  git checkout issue25
+   86  cat monday.txt
+   87  git checkout master
+   88  git delete -D issue25
+   89  git branch -D issue25
+   90  git branch
+   91  cat monday.txt
+   92  git pull
+   93  cat monday.txt
+   94  git pull
+   95  exit
+   96  clear
+   97  dir
+   98  git add .
+   99  git commit -m 'monday changes'
+  100  git push -u origin master
+  101  clear
+  102  cat monday.txt
+  103  git pull
+  104  cat monday.txt
+  105  git pull 
+  106  exit
+  107  cd ibm-april-2025/
+  108  git log
+  109  git reset --soft 8758be7f47b2
+  110  git log
+  111  git reset --soft 9c053a903
+  112  git reset --soft 822b9d3cd67192a
+  113  touch 1.txt
+  114  git commit -m 'added 1.txt
+  115  '
+  116  ls
+  117  git log
+  118  git reset --soft HEAD~1
+  119  ls
+  120  git log
+  121  cls
+  122  git log
+  123  clear
+  124  git log
+  125  clear
+  126  touch a.txt
+  127  git add .
+  128  git status
+  129  git restore --staged a.txt
+  130  git status
+  131  git commit -m 'added some git notes'
+  132  git log
+  133  git log -n 5
+  134  git reset --soft  3d04a715ec7137be
+  135  git log -n 5
+  136  exit
+  137  git add .
+  138  git commit -m 'angular quick start'
+  139  git push -u origin master
+  140  git add .
+  141  git commit -m 'custom pipes code'
+  142  git push -u origin master
+  143  git add .
+  144  git commit -m 'data binding'
+  145  git push -u origin master
+  146  git add .
+  147  git commit -m 'change detection strategy and directives'
+  148  git push -u origin master
+  149  git add .
+  150  git commit -m '@input decorator'
+  151  git push -u origin master
+  152  git add .
+  153  gut commit -m 'case study doc'
+  154  git commit -m 'case study doc'
+  155  git push -u origin master
+  156  git add .
+  157  git commit -m '@Output and @Input and life cycle methods'
+  158  git push -u origin master
+  159  git add .
+  160  git commit -m 'assessment link'
+  161  git push -u origin master
+  162  exit
+  163  git add .
+  164  git commit -m 'template driven forms'
+  165  git push -u origin master
+  166  git add .
+  167  git commit -m 'model driven driven forms'
+  168  git push -u origin master
+  169  git add .
+  170  git commit -m 'case study pdf'
+  171  git push -u origin master
+  172  git add .
+  173  git commit -m 'service with observables'
+  174  git push -u origin master
+  175  git add .
+  176  git add . 
+  177  git commit -m 'session and local storage'
+  178  git push -u origin master
+  179  git add .
+  180  git commit -m 'important points for mcq'
+  181  git push -u origin master
+  182  exit
+  183  git add .
+  184  git commit -m 'json server config'
+  185  git push -u origin master
+  186  git add .
+  187  git commit -m 'service having httpclient'
+  188  git push -u origin master
+  189  git add .
+  190  git commit -m 'http post and get'
+  191  git push -u origin master
+  192  git add .
+  193  git commit -m 'http post and get'
+  194  git push -u origin master
+  195  git add .
+  196  git commit -m 'routing'
+  197  git push -u origin master
+  198  git clone git clone https://github.com/ionic-team/ionic-conference-app.git
+  199  git clone https://github.com/ionic-team/ionic-conference-app.git
+  200  cd ionic-conference-app/
+  201  npm install
+  202  ionic serve
+  203  exit
+  204  git add .
+  205  git commit -m 'routing example'
+  206  git push -u origin master
+  207  git add .
+  208  git commit -m 'ionic starter'
+  209  git push -u origin master
+  210  git add .
+  211  git commit -m 'angular final day'
+  212  git push -u origin master
+  213  exit
+  214  git clone https://github.com/vishhaldawane/Projects.git
+  215  git remote add origin https://github.com/Kishor-C/ofs-batch9-2025.git
+  216  git init
+  217  git remote add origin https://github.com/Kishor-C/ofs-batch9-2025.git
+  218  git status
+  219  git add .
+  220  git commit -m 'day2 tasks'
+  221  git push -u origin master
+  222  git add .
+  223  git commit -m 'day3 concepts'
+  224  git push -u origin master
+  225  cd Batch\ 9/
+  226  clear
+  227  git add .
+  228  git commit -m 'day 5 notes'
+  229  git push -u origin master
+  230  pwd
+  231  vi
+  232  exit
+  233  #!/bin/sh
+  234  echo "WARNING: This is a deprecated script. Please invoke the config.sh script under oracle_common/common/bin."
+  235  mypwd="`pwd`"
+  236  # Determine the location of this script...
+  237  # Note: this will not work if the script is sourced (. ./config.sh)
+  238  SCRIPTNAME=$0
+  239  case ${SCRIPTNAME} in  /*)  SCRIPTPATH=`dirname "${SCRIPTNAME}"` ;;   *)  SCRIPTPATH=`dirname "${mypwd}/${SCRIPTNAME}"` ;; esac
+  240  # Set the MW_HOME relative to this script...
+  241  MW_HOME=`cd "${SCRIPTPATH}/../../.." ; pwd`
+  242  export MW_HOME
+  243  # Delegate to the main script...
+  244  "${MW_HOME}/oracle_common/common/bin/config.sh" "$@"
+  245  git add .
+  246  git commit -m 'wl notes'
+  247  git push -u origin master
+  248  git add .
+  249  git commit -m 'wl notes'
+  250  git push -u origin master
+  251  git addd .
+  252  clear
+  253  git add .
+  254  git commit -m 'mvc pattern code'
+  255  git push -u origin master
+  256  cd cls
+  257  clear
+  258  dir
+  259  ls
+  260  clear
+  261  cd /d/Labs/
+  262  mkdir unix-labs
+  263  cd unix-labs/
+  264  cls
+  265  clear
+  266  ls
+  267  ls -la
+  268  touch 1.txt
+  269  vim 1.txt
+  270  cat 1.txt
+  271  cp 1.txt 2.txt
+  272  cat 2.txt
+  273  cat 1.txt 3.txt 4.txt 5.txt
+  274  cat 1.txt 2.txt 3.txt
+  275  cat 2.txt
+  276  pwd
+  277  nano 1.txt
+  278  date
+  279  cal
+  280  time
+  281  date
+  282  date + "%T"
+  283  date+"%T"
+  284  date --help
+  285  date %T
+  286  date +"%T"
+  287  date + "%T"
+  288  date +"%T"
+  289  date +"%h:%m"
+  290  date +"%H:%m"
+  291  date +"%H:%M"
+  292  date +"%H:%M:%S"
+  293  date +"%H:%M:%S"
+  294  date +"%H:%M:%S"
+  295  date +"%H:%M:%S"
+  296  date +"%H:%M:%S"
+  297  date +"%H:%M:%S"
+  298  date +"%H:%M:%S"
+  299  date +"%H:%M:%S"
+  300  date +"%H:%M:%S"
+  301  mv 1.txt 11.txt
+  302  ls
+  303  cd ~
+  304  pwd
+  305  ls
+  306  cdcd /d/Labs/unix-labs/
+  307  cd /d/Labs//unix-labs/
+  308  pwd
+  309  md test
+  310  mkdir test
+  311  mv 11.txt test
+  312  ls test
+  313  cat test/11.txt
+  314  clear
+  315  pwd
+  316  touch a.txt b.txt c.txt
+  317  ls
+  318  mkdir backup1 backup2
+  319  ls
+  320  hello > 2.txt
+  321  "Hello">2.txt
+  322  echo "readme file" > 2.txt
+  323  cat 2.txt
+  324  echo "another read" > 3.txt
+  325  cat 2.txt 3.txt 
+  326  vi 2.txt
+  327  vi 3.txt 
+  328  cat 2.txt 3.txt 
+  329  echo 2.txt && echo 3.txt 
+  330  echo 2.txt &&  cat 2.txt echo 3.txt && cat 3.txt 
+  331  echo 2.txt &&  cat 2.txt && echo 3.txt && cat 3.txt 
+  332  cd /d
+  333  cd /LICENSE.txt cls
+  334  clear
+  335  cd Labs/unix-labs/
+  336  cls
+  337  clear
+  338  ls -l -a
+  339  ls -la
+  340  clear
+  341  xxx
+  342  clear
+  343  ls -la
+  344  ls -l
+  345  clear
+  346  ls
+  347  ls -la
+  348  mv 2.txt 22.txt
+  349  ls
+  350  mv 22.txt c.txt
+  351  mv 3.txt d.txt
+  352  cat *.txt
+  353  cat > a.txt
+  354  cat a.txt
+  355  cat b.txt
+  356  cat c.txt
+  357  cat >> c.txt
+  358  cat c.txt
+  359  cat >>> c.txt
+  360  cat > c.txt
+  361  cat c.txt
+  362  mv backup1 backup
+  363  ls
+  364  cp a.txt backup
+  365  ls
+  366  ls backup
+  367  ls backup2
+  368  cp b.txt backup2
+  369  ls backup2
+  370  ls backup1
+  371  ls backup
+  372  ls
+  373  ls test
+  374  cp *.txt test
+  375  ls test
+  376  rm test/*.txt
+  377  ls test
+  378  cp a.txt b.txt test
+  379  ls test
+  380  ls test
+  381  rm test *.txt
+  382  rm test/*.txt
+  383  cp -r backup backup1 *.txt test
+  384  ls
+  385  ls
+  386  cp -r backup backup test
+  387  cp -r backup backup2 test
+  388  ls test
+  389  ls
+  390  rm test
+  391  rm -f test
+  392  rmdir -f test
+  393  rmdir test
+  394  rm -r test
+  395  rm backup
+  396  rmdir backup
+  397  rmdir -r backup
+  398  rm -f backup
+  399  rm -r backup
+  400  ls
+  401  ls backup2/
+  402  rm backup2/
+  403  rmdir backup2/
+  404  rm backup2/*.txt
+  405  rmdir backup2
+  406  ls
+  407  touch a.txt b.txt c.txt a.log b.log c.log a.java b.java c.java a.c b.c c.c
+  408  ls
+  409  mkdir backup1
+  410  mkdir backup2
+  411  mkdir backup3
+  412  find .
+  413  find . -name "*.txt"
+  414  touch backup1/z.txt
+  415  find . -name "*.txt"
+  416  find *.txt
+  417  find -name *.txt
+  418  find . -name '*.txt'
+  419  ls
+  420  ls backup1
+  421  touch backup1/a.txt backup2/a.txt backup3/a.txt
+  422  find . -name "a.txt"
+  423  find . -type f -name "a.txt"
+  424  find . -name "a.txt"
+  425  find . -type f -name "a.txt" -delete
+  426  find . -name "a.txt"
+  427  mkdir backup1/test
+  428  mkdir backup2/test
+  429  find . -type d -name "test" -delete
+  430  ls
+  431  ls backup1
+  432  touch hello.sh
+  433  vi hello.sh 
+  434  ls hello.sh -l
+  435  chmod +x hello.sh
+  436  ls
+  437  ls -la
+  438  ./hello.sh 
+  439  touch startPrint.sh
+  440  vi startPrint.sh 
+  441  ls
+  442  ./startPrint.sh 
+  443  vi startPrint.sh 
+  444  cat > startPrint.sh
+  445  cat startPrint.sh 
+  446  cat >> startPrint.sh
+  447  cat startPrint.sh 
+  448  ./startPrint.sh
+  449  cat > startPrint.sh
+  450  cat > startPrint.sh
+  451  cat startPrint.sh
+  452  ./startPrint.sh
+  453  vi startPrint.sh
+  454  ./startPrint.sh 
+  455  vi startPrint.sh
+  456  ./startPrint.sh 
+  457  vi ./startPrint.sh 
+  458  ./startPrint.sh 
+  459  cat ./startPrint.sh 
+  460  ls
+  461  mv startPrint.sh add.sh
+  462  ls
+  463  rm *.txt *.log
+  464  ls
+  465  rm *.java *.c
+  466  ls
+  467  rm -r backup1 backup2 backup3
+  468  ls
+  469  touch ifElseDemo.sh
+  470  cat > ifElseDemo.sh
+  471  ./ifElseDemo.sh 
+  472  vi ifElseDemo.sh 
+  473  ./ifElseDemo.sh 
+  474  cat ifElseDemo.sh 
+  475  vi ifElseDemo.sh
+  476  ./ifElseDemo.sh 
+  477  cat ifElseDemo.sh 
+  478  vi ifElseDemo.sh 
+  479  ./ifElseDemo.sh 
+  480  cat ifElseDemo.sh
+  481  cat >> arrasDemo.sh
+  482  ./arrasDemo.sh
+  483  rm arrasDemo.sh 
+  484  touch arraysDemo.sh
+  485  vi arraysDemo.sh
+  486  ./arraysDemo.sh 
+  487  cat arraysDemo.sh 
+  488  vi arraysDemo.sh 
+  489  cat arraysDemo.sh 
+  490  cat arraysDemo.sh 
+  491  vi arraysDemo.sh
+  492  cat arraysDemo.sh 
+  493  ./arraysDemo.sh 
+  494  vi arraysDemo.sh
+  495  ./arraysDemo.sh 
+  496  vi arraysDemo.sh
+  497  ./arraysDemo.sh 
+  498  ls
+  499  cd Oracle/
+  500  clear
+  501  pwd
+  502  d:
+  503  cd /d
+  504  cd Training\ Stuffs/Corporate\ Clients/OFS/2025/Batch 12
+  505  pwd
+  506  cd "Training\ Stuffs/Corporate\ Clients/OFS/2025/Batch 12"
+  507  cd Training\ Stuffs/Corporate\ Clients/OFS/2025/Batch12
+  508  clear
+  509  mkdir unix-commands
+  510  cd unix-commands/
+  511  clear
+  512  mkdir scripts
+  513  cd scripts/
+  514  touch hello.sh
+  515  cat > hello.sh
+  516  cat hello.sh
+  517  ./hello.sh
+  518  vi hello.sh 
+  519  vi hello.sh 
+  520  touch ifElseDemo.sh
+  521  vi ifElseDemo.sh
+  522  touch variablesDemo.sh
+  523  vi variablesDemo.sh
+  524  vi variablesDemo.sh
+  525  ./variablesDemo.sh
+  526  cat variablesDemo.sh
+  527  vi variablesDemo.sh
+  528  ./variablesDemo.sh
+  529  vi variablesDemo.sh
+  530  ./variablesDemo.sh
+  531  vi variablesDemo.sh 
+  532  ./variablesDemo.sh
+  533  fc -l
+  534  fc -l > a.txt
+  535  cat a.txt
+  536  history > a.txt
