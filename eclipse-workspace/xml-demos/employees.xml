@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<employees>
+	<employee>
+		<id>123</id>
+		<name>Atharva</name>
+		<salary>45000</salary>
+	</employee>
+	<employee>
+		<id>456</id>
+		<name>Siddharth</name>
+		<salary>50000</salary>
+	</employee>
+</employees>

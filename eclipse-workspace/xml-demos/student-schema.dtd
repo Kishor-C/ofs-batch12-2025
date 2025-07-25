@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT students (student)*>
+<!ELEMENT student (name, age)>
+<!ATTLIST student roll_no CDATA #REQUIRED >
+<!ATTLIST students college_name CDATA #FIXED "ABC" >
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+

@@ -1,0 +1,8 @@
+1. Create XSD that will have <customers> which is a root tag, with <customer> as
+	a child tag, <customer> tag must have following tags name, age, accountNo,
+	isEmpoyed, make sure <customer> can repeat more than once
+2. Use XSL and convert the XML into HTML table format
+3. Create a DTD file that uses wild cards like ?, *, +, #IMPLIED, #REQUIRED, 
+	#FIXED
+4. Read Student Guide that covers, Xpath, XQuery, Oracle XML DB
+

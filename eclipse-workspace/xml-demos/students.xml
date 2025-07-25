@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	<!DOCTYPE root_element SYSTEM url>
+-->
+<!DOCTYPE students SYSTEM "student-schema.dtd" >
+<students>
+	<student roll_no="1">
+		<name>Vishnu</name>
+		<age>7</age>
+	</student>
+	<student roll_no="2">
+		<name>Atharva</name>
+		<age>2</age>
+	</student>
+</students>
