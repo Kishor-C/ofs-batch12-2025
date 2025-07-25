@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+
+<books>
+	<book id="123">
+		<author>Atharv</author>
+		<title>A kids story</title>
+	</book>
+	<book id="456">
+		<author>Siddharth</author>
+		<title>A forest story</title>
+	</book>
+</books>
