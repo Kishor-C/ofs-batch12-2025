@@ -68,3 +68,25 @@ select department_id, count(department_id) from employees GROUP BY department_id
 -- having is used to filter the aggregated result
 select department_id, count(department_id) 
 from employees GROUP BY department_id having count(department_id) > 20;
+
+select first_name,salary from employees where instr(salary, '1') > 0;
+
+select table_name from user_tables;
+-- INNER JOIN on EMPLOYEES and DEPARTMENTS
+select employee_id, first_name, e.department_id, department_name 
+from employees e INNER JOIN departments d on e.department_id = d.department_id;
+-- INNER JOIN on EMPLOYEES, JOBS and DEPARTMENTS with WHERE
+select first_name, department_name, job_title 
+from employees e INNER JOIN jobs j ON e.job_id=j.job_id
+INNER JOIN departments d ON e.department_id=d.department_id 
+WHERE d.department_name IN ('Finance', 'Accounting');
+-- INNER JOIN on EMPLOYEES, JOBS and JOB_HISTORY to list job_history of 101,176,200
+select e.employee_id, first_name, job_title, start_date, end_date 
+from employees e 
+INNER JOIN JOB_HISTORY jh on e.employee_id=jh.employee_id 
+INNER JOIN JOBS j on jh.job_id=j.job_id 
+WHERE e.employee_id in (101, 176, 200);
+
+-- LEFT JOIN & RIGHT JOIN
+select employee_id, first_name, d.department_id, department_name 
+from employees e RIGHT JOIN departments d on e.department_id=d.department_id;
