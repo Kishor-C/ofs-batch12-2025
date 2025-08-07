@@ -6,7 +6,7 @@ import com.oracle.dao.EmployeeDAO;
 import com.oracle.dao.util.EmployeeDAOFactory;
 
 public class EmployeeServiceFactory {
-	public static EmployeeService getService() {
+	public static EmployeeService getEmployeeService() {
 		EmployeeDAO employeeDAO = EmployeeDAOFactory.getEmployeeDAO();
 		EmployeeService employeeService = new EmployeeServiceImpl(employeeDAO);
 		return employeeService;
