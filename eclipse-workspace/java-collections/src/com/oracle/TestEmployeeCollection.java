@@ -18,9 +18,9 @@ public class TestEmployeeCollection {
 		
 		Comparator<Employee> descSalary = (e1, e2) -> Double.compare(e2.getSalary(), e1.getSalary());
 		// LocalDate implements Comparable.compareTo
-		Comparator<Employee> ascDob = (e1, e2) -> e1.getDob().compareTo(e2.getDob());
+		//Comparator<Employee> ascDob = (e1, e2) -> e1.getDob().compareTo(e2.getDob());
 		// String implements Comparable.compareTo
-		Comparator<Employee> ascName = (e1, e2) -> e1.getName().compareTo(e2.getName());
+		//Comparator<Employee> ascName = (e1, e2) -> e1.getName().compareTo(e2.getName());
 		//Note: for int, double, long & etc you must use Wrapper class compare method
 		// pass different comparator reference to the TreeSet(Comparator<T>)
 		Set<Employee> employeeSet = new TreeSet<Employee>(descSalary);
