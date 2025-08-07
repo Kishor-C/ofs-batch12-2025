@@ -33,8 +33,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public int storeEmployees(Employee... employee) {
-		// TODO Auto-generated method stub
-		return 0;
+		int counter = 0;
+		for(Employee e : employee) {
+			storeEmployee(e);
+			counter++;
+		}
+		return counter;
 	}
 
 	@Override
