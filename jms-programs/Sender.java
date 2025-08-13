@@ -20,8 +20,8 @@ public class Sender {
 			env.put(Context.INITIAL_CONTEXT_FACTORY, WLInitialContextFactory.class.getName()); 
 			Context ctx = new InitialContext(env);
 			
-			QueueConnectionFactory qcf = (QueueConnectionFactory) ctx.lookup("MYCF");
-			Queue queue = (Queue) ctx.lookup("MYQ");
+			QueueConnectionFactory qcf = (QueueConnectionFactory) ctx.lookup("MY_QCF");
+			Queue queue = (Queue) ctx.lookup("MY_Q");
 			
 			QueueConnection con = qcf.createQueueConnection();
 			con.start();
