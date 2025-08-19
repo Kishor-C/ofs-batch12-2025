@@ -45,27 +45,39 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 
 	@Override
+	@Transactional
 	public int storeEmployees(Employee... employee) {
-		// TODO Auto-generated method stub
-		return 0;
+		int count = 0;
+		for(Employee e : employee) {
+			employeeDao.save(e);
+			count++;
+		}
+		return count;
 	}
 
 	@Override
+	@Transactional
 	public Employee updateEmployeeDobById(int id, LocalDate dob) {
-		// TODO Auto-generated method stub
-		return null;
+		// this method is returning employee & throws exception if employee is not found
+		Employee emp = findEmployee(id); 
+		emp.setDob(dob);
+		return emp;
 	}
 
 	@Override
+	@Transactional
 	public Employee updateEmployeeNameById(int id, String name) {
-		// TODO Auto-generated method stub
-		return null;
+		Employee emp = findEmployee(id); 
+		emp.setName(name);
+		return emp;
 	}
 
 	@Override
+	@Transactional
 	public void deleteEmployeeById(int id) {
-		// TODO Auto-generated method stub
-		
+		// this will delete the employee if found else throws RuntimeException
+		Employee emp = findEmployee(id); 
+		employeeDao.delete(emp);
 	}
 
 }
