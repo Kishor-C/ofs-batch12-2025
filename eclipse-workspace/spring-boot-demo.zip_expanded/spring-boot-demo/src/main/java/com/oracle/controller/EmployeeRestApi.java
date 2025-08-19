@@ -31,7 +31,7 @@ public class EmployeeRestApi {
 	 * 2. through JSON - where id comes from pathparam
 	 */
 	
-	
+	//URL = v1/employee/api/240, HTTP - PUT
 	@PutMapping(path = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE )
 	public ResponseEntity<Object> updateEmployee(@RequestBody Employee emp, @PathVariable("id") int id) {
 		
