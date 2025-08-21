@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="fetchEmployees()">Get Employee</button>
+   <script type = "text/javascript">
+    let BASE_URL = "http://localhost:9090/web-case-study/webapi/v1/employee"
+    function fetchEmployees() {
+        let URL = `${BASE_URL}/findAll`;
+        fetch(URL)
+        .then(response => response.json())
+        .then(content => console.log(content))
+    }
+   </script>    
+</body>
+</html>
