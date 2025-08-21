@@ -4,16 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .success-message {color:green;}
+    </style>
 </head>
 <body>
+   <h2>Employee Case Study UI</h2> <hr />
+   <div class = "success-message"></div>
+   <div>
+        <form method="post", onsubmit="storeEmployee(event)">
+            <label>Enter your name:</label>
+            <input type = "text" id = "name" placeholder="Enter name" autocomplete="off"><br/>
+            <label>Select your dob:</label>
+            <input type = "date" id = "dob" ><br/>
+            <input type = "submit" value = "Save"> <br />
+        </form>
+   </div> 
    <button onclick="fetchEmployees()">Get Employee</button>
+   <div id = "employees"></div>
    <script type = "text/javascript">
     let BASE_URL = "http://localhost:9090/web-case-study/webapi/v1/employee"
+    function storeEmployee(e) {
+     e.preventDefault();
+     let name = document.querySelector("#name").value;
+     let dob = document.querySelector("#dob").value;
+     let jsonData = {"name":name, "dob":dob};
+     let URL = `${BASE_URL}/save`;
+     let httpHeaders = {"Content-Type": "application/json"};   
+     fetch(URL, {method : "POST", headers : httpHeaders, body : JSON.stringify(jsonData)})
+        .then(response=>response.json())
+        .catch(err => alert(err))
+        .then(content => {
+            let successDiv = document.querySelector(".success-message");
+            successDiv.innerHTML = 'Employee stored with an id '+content.id;
+        })
+    }
     function fetchEmployees() {
         let URL = `${BASE_URL}/findAll`;
         fetch(URL)
         .then(response => response.json())
-        .then(content => console.log(content))
+        .then(content => {
+            let empDiv = document.querySelector("#employees");
+            let empArray = content;
+            let div = '';
+            for(let emp of empArray) {
+                div = `${div}<p>Id=${emp.id},Name=${emp.name},Dob=${emp.dob}</p>`
+            }
+            empDiv.innerHTML = div;
+        })
     }
    </script>    
 </body>
