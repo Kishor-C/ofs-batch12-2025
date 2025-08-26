@@ -1,0 +1,28 @@
+<!--
+ Copyright (c) 2014, 2024, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Dashboard Content Area</h1>
+  <div>
+      To change the content of this section, you will make edits to the dashboard.html file located in the /ts/views folder.
+  </div>
+  <div>
+    <h2>Button Example</h2>
+    <oj-c-button id="button1" 
+        on-oj-action="[[buttonAction]]" 
+        label="Button Action 1" disabled="[[isDisabled]]"></oj-c-button>
+  </div>
+  <div>
+    <oj-c-input-text
+              id="text-input"
+              on-input="[[validateInput]]"
+              raw-value="{{firstname}}"
+              label-hint="Enter your firstname"
+              label-edge="inside"></oj-c-input-text>
+  </div>
+  <h2>
+    Hello <oj-bind-text value="[[firstname]]"></oj-bind-text>
+  </h2>
+</div>

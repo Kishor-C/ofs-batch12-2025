@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modern Javascript Features</h1>
+    <script type = 'text/javascript'>
+        // rest & spread operator
+        // rest parameter: that takes 0 or more arguments
+        function sum(arg1, ...elements) {
+            console.log(arg1);
+            console.log(elements);
+            console.log('------------------');
+        }
+        sum(2, 3, 4, 5, 6);
+        sum(10, 20, 30);
+        sum(8);
+        // spread operator can distribute values to multiple arguments
+        function spreadDemo(a, b, c) {
+            console.log(a, b, c);
+        }
+        let arr = ['Vishnu', 10, 'Male'];
+        // passing value of an array to each parameter
+        spreadDemo(...arr);
+        // callback functions = arrow function 
+        let items = [2, 3, 4, 1, 5];
+        items.forEach((item, index) => console.log(index, item));
+        function greet() {
+            const name = "Atharv";
+            let age = 2;
+            let gender = "male";
+            if(age == 2) {
+                var count = 50;
+            }
+            // Template string literal ` back tick 
+            console.log(`Name=${name}, Age=${age}, Gender=${gender}, Count=${count}`);
+        }
+        greet();
+    </script>
+</body>
+</html>

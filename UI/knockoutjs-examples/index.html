@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- View -->
+    <div>
+        <h2>Hello <span data-bind="text:firstname"></span></h2>
+        <h2>Your Dob <span data-bind="text:dob"></span></h2>
+    </div> 
+    <div>
+       Enter name: <input type = "text" data-bind="value:firstname"> <br />
+       Select dob: <input type = "date" data-bind="value:dob"> <br />
+    </div>
+    <script type="text/javascript" 
+        src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    
+    <script>
+        // Model
+        let user = { firstname : "Sachin", dob : "1978-04-24" }
+        // View-Model
+        function AppViewModel() {
+            // it has properties that UI can access
+            this.firstname = ko.observable(user.firstname); 
+            this.dob = ko.observable(user.dob);
+        }
+       
+        // bind the ViewModel to the View using ko.applyBindings()
+        ko.applyBindings(new AppViewModel());
+    </script>
+</body>
+</html>

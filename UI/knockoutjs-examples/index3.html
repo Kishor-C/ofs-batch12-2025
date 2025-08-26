@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Quantity: <span data-bind="text:quantity"></span></h2>
+        <h2>Price: <span data-bind="text:price"></span></h2>
+        <h3>Total Value: <span data-bind="text:total"></span></h3>
+    </div>
+    <script type="text/javascript" 
+        src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script>
+        let shares = {quantity: 25, price : 200}
+        function AppViewModel() {
+           this.quantity = ko.observable(shares.quantity);
+           this.price = ko.observable(shares.price);
+           // use the property() to get and property(value) to set the value
+           //this.total = ko.observable(this.quantity() * this.price());
+           this.total = ko.computed(()=>(this.quantity() * this.price()).toFixed(2));
+           let id = setInterval(()=>{
+            this.price((this.price() * 1.01));
+            }, 2000);
+           setTimeout(()=>clearInterval(id), 10000);
+        }
+        ko.applyBindings(new AppViewModel())
+    </script>   
+</body>
+</html>
