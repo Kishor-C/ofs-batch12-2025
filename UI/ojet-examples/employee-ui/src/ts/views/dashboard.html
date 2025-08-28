@@ -4,8 +4,23 @@
  as shown at https://oss.oracle.com/licenses/upl/
  -->
 <div class="oj-hybrid-padding">
-  <h1>Dashboard Content Area</h1>
-  <div>
-      To change the content of this section, you will make edits to the dashboard.html file located in the /ts/views folder.
-  </div>
+  <h1>Employee Details</h1>
+  <div id="sampleDemo" class="demo-padding demo-container">
+        <div id="componentDemoContent" style="width: 1px; min-width: 100%;">
+                  
+          <div id="mainContent">
+            <oj-table
+              id="table"
+              aria-label="Employee Details"
+              accessibility.row-header="name"
+              data="[[dataprovider]]"
+              columns-default='{"sortable": "disabled"}'
+              columns='[{"headerText": "Employee Id", "field": "id", "id": "id"},
+                        {"headerText": "Employee Name", "field": "name", "id": "name"},
+                        {"headerText": "Birthday", "field": "dob", "id": "birthdayId"}]'
+              class="demo-table-container"></oj-table>
+          </div>
+
+        </div>
+      </div>
 </div>

@@ -6,39 +6,33 @@
  * @ignore
  */
 import * as AccUtils from "../accUtils";
+import 'ojs/ojtable';
+import { RESTDataProvider } from 'ojs/ojrestdataprovider';
+
+// type to specify the datastructur of the data
+type D = {id: number, name : string, dob : Date}
+type K = D['id'];
 class DashboardViewModel {
-
+  readonly keyAttributes = 'id';
+  readonly dataprovider : RESTDataProvider<K, D>;
+  // initialize the dataprovider to get the json data from the employee api
   constructor() {
-
-  }
-
-  /**
-   * Optional ViewModel method invoked after the View is inserted into the
-   * document DOM.  The application can put logic that requires the DOM being
-   * attached here.
-   * This method might be called multiple times - after the View is created
-   * and inserted into the DOM and after the View is reconnected
-   * after being disconnected.
-   */
-  connected(): void {
-    AccUtils.announce("Dashboard page loaded.");
-    document.title = "Dashboard";
-    // implement further logic if needed
-  }
-
-  /**
-   * Optional ViewModel method invoked after the View is disconnected from the DOM.
-   */
-  disconnected(): void {
-    // implement if needed
-  }
-
-  /**
-   * Optional ViewModel method invoked after transition to the new View is complete.
-   * That includes any possible animation between the old and the new View.
-   */
-  transitionCompleted(): void {
-    // implement if needed
+    this.dataprovider = new RESTDataProvider({
+      keyAttributes : this.keyAttributes,
+      url : 'http://localhost:9090/web-case-study/webapi/v1/employee/findAll',
+      transforms : {
+        fetchFirst : {
+          request : async (options) => {
+            const url = new URL(options.url);
+            return new Request(url.href);
+          },
+          response : async ({body}) => {
+            let data = body;
+            return {data} // {id, name, dob}
+          }
+        }
+      }
+    });
   }
 }
 
