@@ -1,0 +1,22 @@
+
+
+<div class="oj-hybrid-padding">
+  <h1>Login Form</h1>
+  <h2 style="color:red"><oj-bind-text value="[[errorMessage]]"></oj-bind-text></h2>
+   <div id="form-container">             
+        <oj-c-form-layout id="myform">
+            <oj-c-input-text
+            id="inputtext"
+                
+            value="{{username}}"
+            label-hint="Input Text"></oj-c-input-text>
+            <oj-c-input-password
+                id="inputpwd"
+                value="{{password}}"
+                label-hint="Input Password"></oj-c-input-password>
+            <oj-c-button id="button1" 
+                on-oj-action="[[loginAction]]" 
+                label="Login"></oj-c-button>
+        </oj-c-form-layout>
+    </div>
+</div>
